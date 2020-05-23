@@ -46,14 +46,14 @@ The program is part of the "Swift NIO IRC" family of packages, which includes:
 ### Screenshots
 
 <center><img src="https://zeezide.de/img/NeoIRC-screenshot-1.png"
-     align="right" width="200"/></center>
+             width="200"/></center>
 
 macOS also works, kinda. Not really. But it builds :-)
 
-#### WebClient
+### WebClient
 
 <center><img src="https://zeezide.de/img/irc-eliza-720x781.png"
-     align="right" width="200"/></center>
+             width="240"/></center>
 
 
 ### TODO
