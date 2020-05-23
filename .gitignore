@@ -1,0 +1,5 @@
+xcuserdata
+*.xcuserdatad
+.build
+Package.resolved
+**/Package.resolved

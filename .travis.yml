@@ -1,0 +1,25 @@
+language:  generic
+
+notifications:
+  slack:
+    rooms:
+      - zeeql:odi4PEJUdmDPkBfjhHIaSdrS
+
+matrix:
+    include:
+        - os:   osx
+          osx_image: xcode11.4
+
+before_install:
+    - ./.travis.d/before-install.sh
+
+install:
+    - ./.travis.d/install.sh
+
+script:
+    - export PATH="$HOME/usr/bin:$PATH"
+    - swift build -c release
+    - swift build -c debug
+    - set -o pipefail
+    - xcodebuild -scheme NeoIRC-iOS -configuration Debug   -target NeoIRC-iOS | xcpretty
+    - xcodebuild -scheme NeoIRC-iOS -configuration Release -target NeoIRC-iOS | xcpretty

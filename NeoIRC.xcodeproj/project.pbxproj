@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E899B47824769D59004B55B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E899B47724769D59004B55B8 /* AppDelegate.swift */; };
+		E899B47A24769D59004B55B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E899B47924769D59004B55B8 /* SceneDelegate.swift */; };
+		E899B47E24769D5A004B55B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E899B47D24769D5A004B55B8 /* Assets.xcassets */; };
+		E899B48124769D5A004B55B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E899B48024769D5A004B55B8 /* Preview Assets.xcassets */; };
+		E899B48424769D5A004B55B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E899B48224769D5A004B55B8 /* LaunchScreen.storyboard */; };
+		E8C798BB2479458700381F22 /* IRCAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AB2479458700381F22 /* IRCAccount.swift */; };
+		E8C798BC2479458700381F22 /* IRCServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AC2479458700381F22 /* IRCServiceManager.swift */; };
+		E8C798BD2479458700381F22 /* IRCTimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AD2479458700381F22 /* IRCTimelineEntry.swift */; };
+		E8C798BE2479458700381F22 /* IRCConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AE2479458700381F22 /* IRCConversation.swift */; };
+		E8C798BF2479458700381F22 /* IRCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AF2479458700381F22 /* IRCService.swift */; };
+		E8C798C02479458700381F22 /* ChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B12479458700381F22 /* ChannelListView.swift */; };
+		E8C798C12479458700381F22 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B22479458700381F22 /* ServiceView.swift */; };
+		E8C798C22479458700381F22 /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B32479458700381F22 /* EditAccountView.swift */; };
+		E8C798C32479458700381F22 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B42479458700381F22 /* TimelineView.swift */; };
+		E8C798C42479458700381F22 /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B52479458700381F22 /* ServerListView.swift */; };
+		E8C798C52479458700381F22 /* JoinChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B62479458700381F22 /* JoinChannelView.swift */; };
+		E8C798C62479458700381F22 /* NeoIRCClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B72479458700381F22 /* NeoIRCClientView.swift */; };
+		E8C798C72479458700381F22 /* IdenticonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B92479458700381F22 /* IdenticonText.swift */; };
+		E8C798C82479458700381F22 /* Identicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798BA2479458700381F22 /* Identicon.swift */; };
+		E8C798CA247945A000381F22 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798C9247945A000381F22 /* Defaults.swift */; };
+		E8C798CF247945D600381F22 /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = E8C798CE247945D600381F22 /* NIOTransportServices */; };
+		E8C798D1247945D600381F22 /* IRC in Frameworks */ = {isa = PBXBuildFile; productRef = E8C798D0247945D600381F22 /* IRC */; };
+		E8C798D3247945D600381F22 /* IGIdenticon in Frameworks */ = {isa = PBXBuildFile; productRef = E8C798D2247945D600381F22 /* IGIdenticon */; };
+		E8C798D4247945DC00381F22 /* libNeoIRCClient-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C798A22479455A00381F22 /* libNeoIRCClient-iOS.a */; };
+		E8C798DC2479526800381F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798DB2479526800381F22 /* AppDelegate.swift */; };
+		E8C798DE2479526800381F22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798DD2479526800381F22 /* ContentView.swift */; };
+		E8C798E02479526900381F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C798DF2479526900381F22 /* Assets.xcassets */; };
+		E8C798E32479526900381F22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C798E22479526900381F22 /* Preview Assets.xcassets */; };
+		E8C798E62479526900381F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C798E42479526900381F22 /* Main.storyboard */; };
+		E8C798F52479551A00381F22 /* libNeoIRCClient-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C798F12479550E00381F22 /* libNeoIRCClient-macOS.a */; };
+		E8C798F92479552E00381F22 /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = E8C798F82479552E00381F22 /* NIOTransportServices */; };
+		E8C798FB2479552E00381F22 /* IRC in Frameworks */ = {isa = PBXBuildFile; productRef = E8C798FA2479552E00381F22 /* IRC */; };
+		E8C798FD2479552E00381F22 /* IGIdenticon in Frameworks */ = {isa = PBXBuildFile; productRef = E8C798FC2479552E00381F22 /* IGIdenticon */; };
+		E8C798FE2479553600381F22 /* IRCAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AB2479458700381F22 /* IRCAccount.swift */; };
+		E8C798FF2479553600381F22 /* IRCServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AC2479458700381F22 /* IRCServiceManager.swift */; };
+		E8C799002479553600381F22 /* IRCTimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AD2479458700381F22 /* IRCTimelineEntry.swift */; };
+		E8C799012479553600381F22 /* IRCConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AE2479458700381F22 /* IRCConversation.swift */; };
+		E8C799022479553600381F22 /* IRCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798AF2479458700381F22 /* IRCService.swift */; };
+		E8C799032479553A00381F22 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798C9247945A000381F22 /* Defaults.swift */; };
+		E8C799042479554000381F22 /* NeoIRCClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B72479458700381F22 /* NeoIRCClientView.swift */; };
+		E8C799052479554300381F22 /* IdenticonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B92479458700381F22 /* IdenticonText.swift */; };
+		E8C799062479554300381F22 /* Identicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798BA2479458700381F22 /* Identicon.swift */; };
+		E8C799072479554700381F22 /* ChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B12479458700381F22 /* ChannelListView.swift */; };
+		E8C799082479554700381F22 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B22479458700381F22 /* ServiceView.swift */; };
+		E8C799092479554700381F22 /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B32479458700381F22 /* EditAccountView.swift */; };
+		E8C7990A2479554700381F22 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B42479458700381F22 /* TimelineView.swift */; };
+		E8C7990B2479554700381F22 /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B52479458700381F22 /* ServerListView.swift */; };
+		E8C7990C2479554700381F22 /* JoinChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C798B62479458700381F22 /* JoinChannelView.swift */; };
+		E8C7990F247955EB00381F22 /* CrossCompat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C7990E247955EB00381F22 /* CrossCompat.swift */; };
+		E8C79910247955EB00381F22 /* CrossCompat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C7990E247955EB00381F22 /* CrossCompat.swift */; };
+		E8C79912247965E300381F22 /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C79911247965E300381F22 /* ChannelView.swift */; };
+		E8C79913247965E300381F22 /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C79911247965E300381F22 /* ChannelView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8C798CB247945B300381F22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E899B46C24769D59004B55B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8C798A12479455A00381F22;
+			remoteInfo = NeoIRCClient;
+		};
+		E8C798F62479551E00381F22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E899B46C24769D59004B55B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8C798F02479550E00381F22;
+			remoteInfo = "NeoIRCClient-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8C798A02479455A00381F22 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E899B47424769D59004B55B8 /* NeoIRC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoIRC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E899B47724769D59004B55B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E899B47924769D59004B55B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E899B47D24769D5A004B55B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E899B48024769D5A004B55B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E899B48324769D5A004B55B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E899B48524769D5A004B55B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C7989C2479402B00381F22 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E8C798A22479455A00381F22 /* libNeoIRCClient-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libNeoIRCClient-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C798AB2479458700381F22 /* IRCAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRCAccount.swift; sourceTree = "<group>"; };
+		E8C798AC2479458700381F22 /* IRCServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRCServiceManager.swift; sourceTree = "<group>"; };
+		E8C798AD2479458700381F22 /* IRCTimelineEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRCTimelineEntry.swift; sourceTree = "<group>"; };
+		E8C798AE2479458700381F22 /* IRCConversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRCConversation.swift; sourceTree = "<group>"; };
+		E8C798AF2479458700381F22 /* IRCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRCService.swift; sourceTree = "<group>"; };
+		E8C798B12479458700381F22 /* ChannelListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListView.swift; sourceTree = "<group>"; };
+		E8C798B22479458700381F22 /* ServiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
+		E8C798B32479458700381F22 /* EditAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
+		E8C798B42479458700381F22 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		E8C798B52479458700381F22 /* ServerListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
+		E8C798B62479458700381F22 /* JoinChannelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinChannelView.swift; sourceTree = "<group>"; };
+		E8C798B72479458700381F22 /* NeoIRCClientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeoIRCClientView.swift; sourceTree = "<group>"; };
+		E8C798B92479458700381F22 /* IdenticonText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdenticonText.swift; sourceTree = "<group>"; };
+		E8C798BA2479458700381F22 /* Identicon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identicon.swift; sourceTree = "<group>"; };
+		E8C798C9247945A000381F22 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		E8C798D92479526800381F22 /* NeoIRC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoIRC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C798DB2479526800381F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8C798DD2479526800381F22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8C798DF2479526900381F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8C798E22479526900381F22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8C798E52479526900381F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8C798E72479526900381F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C798E82479526900381F22 /* NeoIRC_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeoIRC_macOS.entitlements; sourceTree = "<group>"; };
+		E8C798F12479550E00381F22 /* libNeoIRCClient-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libNeoIRCClient-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C7990E247955EB00381F22 /* CrossCompat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCompat.swift; sourceTree = "<group>"; };
+		E8C79911247965E300381F22 /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E899B47124769D59004B55B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C798D4247945DC00381F22 /* libNeoIRCClient-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C7989F2479455A00381F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C798CF247945D600381F22 /* NIOTransportServices in Frameworks */,
+				E8C798D1247945D600381F22 /* IRC in Frameworks */,
+				E8C798D3247945D600381F22 /* IGIdenticon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C798D62479526800381F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C798F52479551A00381F22 /* libNeoIRCClient-macOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C798EF2479550E00381F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C798F92479552E00381F22 /* NIOTransportServices in Frameworks */,
+				E8C798FB2479552E00381F22 /* IRC in Frameworks */,
+				E8C798FD2479552E00381F22 /* IGIdenticon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E899B46B24769D59004B55B8 = {
+			isa = PBXGroup;
+			children = (
+				E8C7989C2479402B00381F22 /* README.md */,
+				E8C798A92479458700381F22 /* NeoIRCClient */,
+				E899B47624769D59004B55B8 /* NeoIRC-iOS */,
+				E8C798DA2479526800381F22 /* NeoIRC-macOS */,
+				E899B47524769D59004B55B8 /* Products */,
+				E8C798CD247945D600381F22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E899B47524769D59004B55B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E899B47424769D59004B55B8 /* NeoIRC.app */,
+				E8C798A22479455A00381F22 /* libNeoIRCClient-iOS.a */,
+				E8C798D92479526800381F22 /* NeoIRC.app */,
+				E8C798F12479550E00381F22 /* libNeoIRCClient-macOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E899B47624769D59004B55B8 /* NeoIRC-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E899B47724769D59004B55B8 /* AppDelegate.swift */,
+				E899B47924769D59004B55B8 /* SceneDelegate.swift */,
+				E899B47D24769D5A004B55B8 /* Assets.xcassets */,
+				E899B48224769D5A004B55B8 /* LaunchScreen.storyboard */,
+				E899B48524769D5A004B55B8 /* Info.plist */,
+				E899B47F24769D5A004B55B8 /* Preview Content */,
+			);
+			path = "NeoIRC-iOS";
+			sourceTree = "<group>";
+		};
+		E899B47F24769D5A004B55B8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E899B48024769D5A004B55B8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8C798A92479458700381F22 /* NeoIRCClient */ = {
+			isa = PBXGroup;
+			children = (
+				E8C798C9247945A000381F22 /* Defaults.swift */,
+				E8C798AA2479458700381F22 /* Model */,
+				E8C798B02479458700381F22 /* Views */,
+				E8C7990D247955C300381F22 /* Utilities */,
+			);
+			name = NeoIRCClient;
+			path = Sources/NeoIRCClient;
+			sourceTree = "<group>";
+		};
+		E8C798AA2479458700381F22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8C798AB2479458700381F22 /* IRCAccount.swift */,
+				E8C798AC2479458700381F22 /* IRCServiceManager.swift */,
+				E8C798AD2479458700381F22 /* IRCTimelineEntry.swift */,
+				E8C798AE2479458700381F22 /* IRCConversation.swift */,
+				E8C798AF2479458700381F22 /* IRCService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8C798B02479458700381F22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8C798B72479458700381F22 /* NeoIRCClientView.swift */,
+				E8C798B82479458700381F22 /* Reusable */,
+				E8C798B12479458700381F22 /* ChannelListView.swift */,
+				E8C798B22479458700381F22 /* ServiceView.swift */,
+				E8C798B32479458700381F22 /* EditAccountView.swift */,
+				E8C79911247965E300381F22 /* ChannelView.swift */,
+				E8C798B42479458700381F22 /* TimelineView.swift */,
+				E8C798B52479458700381F22 /* ServerListView.swift */,
+				E8C798B62479458700381F22 /* JoinChannelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8C798B82479458700381F22 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				E8C798B92479458700381F22 /* IdenticonText.swift */,
+				E8C798BA2479458700381F22 /* Identicon.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		E8C798CD247945D600381F22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8C798DA2479526800381F22 /* NeoIRC-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8C798DB2479526800381F22 /* AppDelegate.swift */,
+				E8C798DD2479526800381F22 /* ContentView.swift */,
+				E8C798DF2479526900381F22 /* Assets.xcassets */,
+				E8C798E42479526900381F22 /* Main.storyboard */,
+				E8C798E72479526900381F22 /* Info.plist */,
+				E8C798E82479526900381F22 /* NeoIRC_macOS.entitlements */,
+				E8C798E12479526900381F22 /* Preview Content */,
+			);
+			path = "NeoIRC-macOS";
+			sourceTree = "<group>";
+		};
+		E8C798E12479526900381F22 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E8C798E22479526900381F22 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8C7990D247955C300381F22 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E8C7990E247955EB00381F22 /* CrossCompat.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E8C798ED2479550E00381F22 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E899B47324769D59004B55B8 /* NeoIRC-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E899B48824769D5A004B55B8 /* Build configuration list for PBXNativeTarget "NeoIRC-iOS" */;
+			buildPhases = (
+				E899B47024769D59004B55B8 /* Sources */,
+				E899B47124769D59004B55B8 /* Frameworks */,
+				E899B47224769D59004B55B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8C798CC247945B300381F22 /* PBXTargetDependency */,
+			);
+			name = "NeoIRC-iOS";
+			packageProductDependencies = (
+			);
+			productName = NeoIRC;
+			productReference = E899B47424769D59004B55B8 /* NeoIRC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8C798A12479455A00381F22 /* NeoIRCClient-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C798A62479455A00381F22 /* Build configuration list for PBXNativeTarget "NeoIRCClient-iOS" */;
+			buildPhases = (
+				E8C7989E2479455A00381F22 /* Sources */,
+				E8C7989F2479455A00381F22 /* Frameworks */,
+				E8C798A02479455A00381F22 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NeoIRCClient-iOS";
+			packageProductDependencies = (
+				E8C798CE247945D600381F22 /* NIOTransportServices */,
+				E8C798D0247945D600381F22 /* IRC */,
+				E8C798D2247945D600381F22 /* IGIdenticon */,
+			);
+			productName = NeoIRCClient;
+			productReference = E8C798A22479455A00381F22 /* libNeoIRCClient-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E8C798D82479526800381F22 /* NeoIRC-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C798EB2479526900381F22 /* Build configuration list for PBXNativeTarget "NeoIRC-macOS" */;
+			buildPhases = (
+				E8C798D52479526800381F22 /* Sources */,
+				E8C798D62479526800381F22 /* Frameworks */,
+				E8C798D72479526800381F22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8C798F72479551E00381F22 /* PBXTargetDependency */,
+			);
+			name = "NeoIRC-macOS";
+			productName = "NeoIRC-macOS";
+			productReference = E8C798D92479526800381F22 /* NeoIRC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8C798F02479550E00381F22 /* NeoIRCClient-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C798F22479550E00381F22 /* Build configuration list for PBXNativeTarget "NeoIRCClient-macOS" */;
+			buildPhases = (
+				E8C798ED2479550E00381F22 /* Headers */,
+				E8C798EE2479550E00381F22 /* Sources */,
+				E8C798EF2479550E00381F22 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NeoIRCClient-macOS";
+			packageProductDependencies = (
+				E8C798F82479552E00381F22 /* NIOTransportServices */,
+				E8C798FA2479552E00381F22 /* IRC */,
+				E8C798FC2479552E00381F22 /* IGIdenticon */,
+			);
+			productName = "NeoIRCClient-macOS";
+			productReference = E8C798F12479550E00381F22 /* libNeoIRCClient-macOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E899B46C24769D59004B55B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "ZeeZide GmbH";
+				TargetAttributes = {
+					E899B47324769D59004B55B8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E8C798A12479455A00381F22 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E8C798D82479526800381F22 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E8C798F02479550E00381F22 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = E899B46F24769D59004B55B8 /* Build configuration list for PBXProject "NeoIRC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E899B46B24769D59004B55B8;
+			packageReferences = (
+				E899B48E2476A2D3004B55B8 /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */,
+				E899B49B2476D736004B55B8 /* XCRemoteSwiftPackageReference "swift-nio-irc-client" */,
+				E8C798992479401F00381F22 /* XCRemoteSwiftPackageReference "IGIdenticon" */,
+			);
+			productRefGroup = E899B47524769D59004B55B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8C798A12479455A00381F22 /* NeoIRCClient-iOS */,
+				E8C798F02479550E00381F22 /* NeoIRCClient-macOS */,
+				E899B47324769D59004B55B8 /* NeoIRC-iOS */,
+				E8C798D82479526800381F22 /* NeoIRC-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E899B47224769D59004B55B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E899B48424769D5A004B55B8 /* LaunchScreen.storyboard in Resources */,
+				E899B48124769D5A004B55B8 /* Preview Assets.xcassets in Resources */,
+				E899B47E24769D5A004B55B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C798D72479526800381F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C798E62479526900381F22 /* Main.storyboard in Resources */,
+				E8C798E32479526900381F22 /* Preview Assets.xcassets in Resources */,
+				E8C798E02479526900381F22 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E899B47024769D59004B55B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E899B47824769D59004B55B8 /* AppDelegate.swift in Sources */,
+				E899B47A24769D59004B55B8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C7989E2479455A00381F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C798C12479458700381F22 /* ServiceView.swift in Sources */,
+				E8C798BD2479458700381F22 /* IRCTimelineEntry.swift in Sources */,
+				E8C798BB2479458700381F22 /* IRCAccount.swift in Sources */,
+				E8C798C32479458700381F22 /* TimelineView.swift in Sources */,
+				E8C798C52479458700381F22 /* JoinChannelView.swift in Sources */,
+				E8C79912247965E300381F22 /* ChannelView.swift in Sources */,
+				E8C798C22479458700381F22 /* EditAccountView.swift in Sources */,
+				E8C798C02479458700381F22 /* ChannelListView.swift in Sources */,
+				E8C798BF2479458700381F22 /* IRCService.swift in Sources */,
+				E8C798C72479458700381F22 /* IdenticonText.swift in Sources */,
+				E8C798BC2479458700381F22 /* IRCServiceManager.swift in Sources */,
+				E8C7990F247955EB00381F22 /* CrossCompat.swift in Sources */,
+				E8C798C82479458700381F22 /* Identicon.swift in Sources */,
+				E8C798C62479458700381F22 /* NeoIRCClientView.swift in Sources */,
+				E8C798CA247945A000381F22 /* Defaults.swift in Sources */,
+				E8C798C42479458700381F22 /* ServerListView.swift in Sources */,
+				E8C798BE2479458700381F22 /* IRCConversation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C798D52479526800381F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C798DE2479526800381F22 /* ContentView.swift in Sources */,
+				E8C798DC2479526800381F22 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C798EE2479550E00381F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C799052479554300381F22 /* IdenticonText.swift in Sources */,
+				E8C799082479554700381F22 /* ServiceView.swift in Sources */,
+				E8C799002479553600381F22 /* IRCTimelineEntry.swift in Sources */,
+				E8C799072479554700381F22 /* ChannelListView.swift in Sources */,
+				E8C799062479554300381F22 /* Identicon.swift in Sources */,
+				E8C79913247965E300381F22 /* ChannelView.swift in Sources */,
+				E8C799012479553600381F22 /* IRCConversation.swift in Sources */,
+				E8C799092479554700381F22 /* EditAccountView.swift in Sources */,
+				E8C799022479553600381F22 /* IRCService.swift in Sources */,
+				E8C799032479553A00381F22 /* Defaults.swift in Sources */,
+				E8C7990B2479554700381F22 /* ServerListView.swift in Sources */,
+				E8C79910247955EB00381F22 /* CrossCompat.swift in Sources */,
+				E8C7990C2479554700381F22 /* JoinChannelView.swift in Sources */,
+				E8C798FF2479553600381F22 /* IRCServiceManager.swift in Sources */,
+				E8C798FE2479553600381F22 /* IRCAccount.swift in Sources */,
+				E8C799042479554000381F22 /* NeoIRCClientView.swift in Sources */,
+				E8C7990A2479554700381F22 /* TimelineView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8C798CC247945B300381F22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8C798A12479455A00381F22 /* NeoIRCClient-iOS */;
+			targetProxy = E8C798CB247945B300381F22 /* PBXContainerItemProxy */;
+		};
+		E8C798F72479551E00381F22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8C798F02479550E00381F22 /* NeoIRCClient-macOS */;
+			targetProxy = E8C798F62479551E00381F22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E899B48224769D5A004B55B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E899B48324769D5A004B55B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E8C798E42479526900381F22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8C798E52479526900381F22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E899B48624769D5A004B55B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E899B48724769D5A004B55B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E899B48924769D5A004B55B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NeoIRC-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NeoIRC-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.swift.chat.NeoIRC;
+				PRODUCT_NAME = NeoIRC;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E899B48A24769D5A004B55B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NeoIRC-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NeoIRC-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.swift.chat.NeoIRC;
+				PRODUCT_NAME = NeoIRC;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8C798A72479455A00381F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = NeoIRCClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8C798A82479455A00381F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = NeoIRCClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8C798E92479526900381F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NeoIRC-macOS/NeoIRC_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"NeoIRC-macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NeoIRC-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.zeezide.swift.chat.NeoIRC-macOS";
+				PRODUCT_NAME = NeoIRC;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E8C798EA2479526900381F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NeoIRC-macOS/NeoIRC_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"NeoIRC-macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NeoIRC-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.zeezide.swift.chat.NeoIRC-macOS";
+				PRODUCT_NAME = NeoIRC;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E8C798F32479550E00381F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_MODULE_NAME = NeoIRCClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E8C798F42479550E00381F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_MODULE_NAME = NeoIRCClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E899B46F24769D59004B55B8 /* Build configuration list for PBXProject "NeoIRC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E899B48624769D5A004B55B8 /* Debug */,
+				E899B48724769D5A004B55B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E899B48824769D5A004B55B8 /* Build configuration list for PBXNativeTarget "NeoIRC-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E899B48924769D5A004B55B8 /* Debug */,
+				E899B48A24769D5A004B55B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C798A62479455A00381F22 /* Build configuration list for PBXNativeTarget "NeoIRCClient-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C798A72479455A00381F22 /* Debug */,
+				E8C798A82479455A00381F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C798EB2479526900381F22 /* Build configuration list for PBXNativeTarget "NeoIRC-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C798E92479526900381F22 /* Debug */,
+				E8C798EA2479526900381F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C798F22479550E00381F22 /* Build configuration list for PBXNativeTarget "NeoIRCClient-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C798F32479550E00381F22 /* Debug */,
+				E8C798F42479550E00381F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E899B48E2476A2D3004B55B8 /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-transport-services";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
+		E899B49B2476D736004B55B8 /* XCRemoteSwiftPackageReference "swift-nio-irc-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NozeIO/swift-nio-irc-client.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
+		E8C798992479401F00381F22 /* XCRemoteSwiftPackageReference "IGIdenticon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/seaburg/IGIdenticon.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E8C798CE247945D600381F22 /* NIOTransportServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E899B48E2476A2D3004B55B8 /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */;
+			productName = NIOTransportServices;
+		};
+		E8C798D0247945D600381F22 /* IRC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E899B49B2476D736004B55B8 /* XCRemoteSwiftPackageReference "swift-nio-irc-client" */;
+			productName = IRC;
+		};
+		E8C798D2247945D600381F22 /* IGIdenticon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8C798992479401F00381F22 /* XCRemoteSwiftPackageReference "IGIdenticon" */;
+			productName = IGIdenticon;
+		};
+		E8C798F82479552E00381F22 /* NIOTransportServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E899B48E2476A2D3004B55B8 /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */;
+			productName = NIOTransportServices;
+		};
+		E8C798FA2479552E00381F22 /* IRC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E899B49B2476D736004B55B8 /* XCRemoteSwiftPackageReference "swift-nio-irc-client" */;
+			productName = IRC;
+		};
+		E8C798FC2479552E00381F22 /* IGIdenticon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8C798992479401F00381F22 /* XCRemoteSwiftPackageReference "IGIdenticon" */;
+			productName = IGIdenticon;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E899B46C24769D59004B55B8 /* Project object */;
+}
