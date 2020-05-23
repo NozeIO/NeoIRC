@@ -18,7 +18,8 @@ and
 
 Inspired by:
 
-<center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">For maximum NIO someone (I’m tempted) should adopt NIO to work on top of swift-nio-irc-client <a href="https://t.co/MrQ95M52xu">https://t.co/MrQ95M52xu</a></p>&mdash; Helge Heß (@helje5) <a href="https://twitter.com/helje5/status/1262849721858772993?ref_src=twsrc%5Etfw">May 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+> For maximum NIO someone (I’m tempted) should adopt NIO to work on top of
+> swift-nio-irc-client ... [Twitter](https://twitter.com/helje5/status/1262849721858772993?ref_src=twsrc%5Etfw)
 
 Unfortunately [NIO](https://nio.chat) - the promising Matrix chat client -
 is too tightly coupled to [Matrix SDK](https://www.matrix.org),
@@ -44,13 +45,15 @@ The program is part of the "Swift NIO IRC" family of packages, which includes:
 
 ### Screenshots
 
-![NeoIRC iOS](https://zeezide.de/img/NeoIRC-screenshot-1.png)
+<center><img src="https://zeezide.de/img/NeoIRC-screenshot-1.png"
+     align="right" width="200"/></center>
 
 macOS also works, kinda. Not really. But it builds :-)
 
 #### WebClient
 
-![WebClient w/ Eliza](https://zeezide.de/img/irc-eliza-720x781.png)
+<center><img src="https://zeezide.de/img/irc-eliza-720x781.png"
+     align="right" width="200"/></center>
 
 
 ### TODO
