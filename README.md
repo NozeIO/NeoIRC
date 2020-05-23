@@ -41,6 +41,15 @@ The program is part of the "Swift NIO IRC" family of packages, which includes:
 - and finally, [swift-nio-irc-eliza](https://github.com/NozeIO/swift-nio-irc-eliza),
   a scalable Rogerian psychotherapist, as an IRC bot.
 
+
+### Screenshots
+
+![NeoIRC iOS](https://zeezide.de/img/NeoIRC-screenshot-1.png)
+
+macOS also works, kinda. Not really. But it builds :-)
+
+#### WebClient
+
 ![WebClient w/ Eliza](https://zeezide.de/img/irc-eliza-720x781.png)
 
 
