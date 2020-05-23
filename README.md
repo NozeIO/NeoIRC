@@ -6,7 +6,7 @@
 
 ![Swift5](https://img.shields.io/badge/swift-5-blue.svg)
 ![SwiftNIO2](https://img.shields.io/badge/swiftnio-2-blue.svg)
-![SwiftUI](https://img.shields.io/badge/os-swiftui-purple.svg)
+![SwiftUI](https://img.shields.io/badge/fwk-swiftui-purple.svg)
 ![iOS](https://img.shields.io/badge/os-iOS-green.svg?style=flat)
 ![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
 
