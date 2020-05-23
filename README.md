@@ -1,6 +1,6 @@
 <h2>
   NeoIRC
-  <img src="http://zeezide.com/img/NeoIRC.svg"
+  <img src="http://zeezide.com/img/NeoIRC-macOS-128.png"
        align="right" width="128" height="128" />
 </h2>
 
